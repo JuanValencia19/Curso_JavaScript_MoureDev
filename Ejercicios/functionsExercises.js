@@ -62,9 +62,7 @@ function sumaParesArray(arr) {
     if (!Array.isArray(arr) || arr.length === 0) return undefined;
     let sumaPares = 0
     for (const valor of arr) {
-        if (n % 2 == 0){
-            sumaPares += n
-        } 
+        if (valor % 2 == 0) sumaPares += valor
     }
     return sumaPares;
 }
@@ -84,8 +82,11 @@ console.log(elevarCuadrado([2, 4, 6, 8])); // [4,16,36,64]
 
 // 9. Crea una función que reciba una cadena de texto y devuelva la misma cadena con las palabras en orden inverso
 function cadenaInversa(cadena) {
-    if (typeof cadena !== 'string' || cadena.length === 0) return undefined;
-    return cadena.split(' ').filter(Boolean).reverse().join(' ');
+    let nuevaCadena = ""
+    for (let i = cadena.length - 1; i >= 0; i--) {
+    nuevaCadena += cadena[i]
+}
+return nuevaCadena;
 }
 console.log(cadenaInversa('Pool Party'));
 
