@@ -33,7 +33,7 @@ console.log("Numero total de vocales: " + count1)
 
 // 6. Dado un array de números, usa un bucle para multiplicar todos los números y mostrar el producto
 let myArray1 = [1,5,7,8,4,2]
-let count3 = 0
+let count3 = 1
     for(valor of myArray1){
         count3 *= valor
     }
@@ -41,8 +41,8 @@ let count3 = 0
 // 7. Escribe un bucle que imprima la tabla de multiplicar del 5
 let mult = 5
 for(let i=0; i < 11; i++){
-    mult = mult * i
-    console.log(`5 x ${i}: ${mult}`)
+    let result = mult * i
+    console.log(`5 x ${i}: ${result}`)
 }
 // 8. Usa un bucle para invertir una cadena de texto
 let cadena = "Pool Party"
